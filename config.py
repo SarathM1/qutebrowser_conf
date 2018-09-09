@@ -20,3 +20,9 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # To avoid ssl errors
 config.set('content.ssl_strict', False)
+
+# Set default search engine
+c.url.searchengines = {
+    "DEFAULT": "https://www.google.com/search?q={}",
+    "d": "https://duckduckgo.com/?q={}"
+}
